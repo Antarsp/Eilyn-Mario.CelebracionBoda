@@ -686,10 +686,6 @@
 		var telefono = "526441412113"; 
 		var enlace = "https://api.whatsapp.com/send?phone=" + telefono + "&text=" + encodeURIComponent(mensaje);
 
-		console.log("Nombre: ",nombre);
-		console.log("Asistentes: ",cantidad);
-		console.log("Mensaje: ",mensaje);
-		console.log("Enlace: ",enlace);
 		// Abrir la aplicación de WhatsApp con el enlace generado
 		window.open(enlace);
 	  }
