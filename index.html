@@ -234,7 +234,7 @@
 						<div class="col-md-4 col-sm-4">
 							<div class="form-group">
 								<label for="name" class="sr-only">Name</label>								
-								<input type="text" class="form-control" id="name" minlength="4" placeholder="Nombre" name="extra_nombre" required>
+								<input type="text" class="form-control" id="nombreConfirma" minlength="4" placeholder="Nombre" name="extra_nombre" required>
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-4">
@@ -674,8 +674,8 @@
 	//enviar mensaje
 	function enviarMensaje() {
 		// Obtener el valor de las dos cajas de texto
-		var nombre = document.getElementById("name").value;
-		var cantidad = document.getElementById("number").value;
+		var nombre = document.getElementById("nombreConfirma").value;
+		var cantidad = document.getElementById("invitados").value;
 	  
 		// Crear el mensaje con los valores de las cajas de texto
 		var mensaje = "Hola, mi nombre es " + nombre + " y asistiremos " + cantidad + " personas a su boda.";
