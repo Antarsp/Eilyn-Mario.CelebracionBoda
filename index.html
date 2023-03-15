@@ -678,12 +678,16 @@
 		var cantidad = document.getElementById("number").value;
 	  
 		// Crear el mensaje con los valores de las cajas de texto
-		var mensaje = "Hola, mi nombre es " + name + " y asistiremos " + number + " personas a su boda.";
+		var mensaje = "Hola, mi nombre es " + nombre + " y asistiremos " + cantidad + " personas a su boda.";
 	  
 		// Crear el enlace de WhatsApp con el número de teléfono y el mensaje
 		var telefono = "526441412113"; 
 		var enlace = "https://api.whatsapp.com/send?phone=" + telefono + "&text=" + encodeURIComponent(mensaje);
-	  
+
+		console.log("Nombre: ",nombre);
+		console.log("Asistentes: ",cantidad);
+		console.log("Mensaje: ",mensaje);
+		console.log("Enlace: ",enlace);
 		// Abrir la aplicación de WhatsApp con el enlace generado
 		window.open(enlace);
 	  }
