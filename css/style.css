@@ -1842,3 +1842,9 @@ form label {
 
 /*# sourceMappingURL=style.css.map */
 
+#map,
+#pano {
+  float: left;
+  height: 100%;
+  width: 50%;
+}
