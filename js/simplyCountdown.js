@@ -98,8 +98,8 @@
             return {
                 days: createCountdownElt(countdown, parameters, 'simply-days-section'),
                 hours: createCountdownElt(countdown, parameters, 'simply-hours-section'),
-                minutes: createCountdownElt(countdown, parameters, 'simply-minutes-section'),
-                seconds: createCountdownElt(countdown, parameters, 'simply-seconds-section')
+                minutes: createCountdownElt(countdown, parameters, 'simply-minutes-section')
+                /*seconds: createCountdownElt(countdown, parameters, 'simply-seconds-section')*/
             };
         }
 
@@ -120,12 +120,12 @@
                 day: 28,
                 hours: 0,
                 minutes: 0,
-                seconds: 0,
+                /*seconds: 0,*/
                 words: {
                     days: 'day',
                     hours: 'hour',
                     minutes: 'minute',
-                    seconds: 'second',
+                    /*seconds: 'second',*/
                     pluralLetter: 's'
                 },
                 plural: true,
@@ -158,8 +158,8 @@
             parameters.month - 1,
             parameters.day,
             parameters.hours,
-            parameters.minutes,
-            parameters.seconds
+            parameters.minutes
+            /*parameters.seconds*/
         );
 
         if (parameters.enableUtc) {
@@ -168,8 +168,8 @@
                 targetTmpDate.getUTCMonth(),
                 targetTmpDate.getUTCDate(),
                 targetTmpDate.getUTCHours(),
-                targetTmpDate.getUTCMinutes(),
-                targetTmpDate.getUTCSeconds()
+                targetTmpDate.getUTCMinutes()
+                /*targetTmpDate.getUTCSeconds()*/
             );
         } else {
             targetDate = targetTmpDate;
@@ -182,8 +182,8 @@
             refresh = function () {
                 var dayWord,
                     hourWord,
-                    minuteWord,
-                    secondWord;
+                    minuteWord;
+                    /*secondWord;*/
 
                 now = new Date();
                 if (parameters.enableUtc) {
@@ -203,12 +203,12 @@
                     secondsLeft = secondsLeft % 3600;
 
                     minutes = parseInt(secondsLeft / 60, 10);
-                    seconds = parseInt(secondsLeft % 60, 10);
+                    /*seconds = parseInt(secondsLeft % 60, 10);*/
                 } else {
                     days = 0;
                     hours = 0;
                     minutes = 0;
-                    seconds = 0;
+                    /*seconds = 0;/*
                     window.clearInterval(interval);
                     parameters.onEnd();
                 }
@@ -226,15 +226,15 @@
                         ? parameters.words.minutes + parameters.words.pluralLetter
                         : parameters.words.minutes;
 
-                    secondWord = seconds > 1
+                    /*secondWord = seconds > 1
                         ? parameters.words.seconds + parameters.words.pluralLetter
-                        : parameters.words.seconds;
+                        : parameters.words.seconds;*/
 
                 } else {
                     dayWord = parameters.words.days;
                     hourWord = parameters.words.hours;
                     minuteWord = parameters.words.minutes;
-                    secondWord = parameters.words.seconds;
+                    /*secondWord = parameters.words.seconds;*/
                 }
 
                 /* display an inline countdown into a span tag */
