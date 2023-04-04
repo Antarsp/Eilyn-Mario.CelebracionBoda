@@ -64,3 +64,40 @@ body {
       transform: scale(1);
     }
   }
+
+  .gifts {
+    background-color: #fff;
+    color: #1c1c1c;
+    padding: 50px;
+    margin: 50px 0;
+  }
+  
+  .gifts h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .gifts p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .gifts ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .gifts li {
+    margin-bottom: 10px;
+  }
+  
+  .gifts a {
+    color: #1c1c1c;
+    text-decoration: underline;
+  }
+  
+  .gifts a:hover {
+    color: #af5eff;
+  }
+  
