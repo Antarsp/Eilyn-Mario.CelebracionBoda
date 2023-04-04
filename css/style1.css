@@ -101,3 +101,38 @@ body {
     color: #af5eff;
   }
   
+
+
+  .countdown {
+    background-color: #f7f7f7;
+    color: #1c1c1c;
+    padding: 50px;
+    margin: 50px 0;
+    text-align: center;
+  }
+  
+  .countdown h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .countdown-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .countdown-item {
+    margin: 0 20px;
+  }
+  
+  .countdown-number {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  
+  .countdown-label {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  
