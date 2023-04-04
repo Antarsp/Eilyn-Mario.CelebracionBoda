@@ -160,6 +160,9 @@ function updateCountdown() {
   minutesCountdown.textContent = minutesLeft < 10 ? '0' + minutesLeft : minutesLeft;
   secondsCountdown.textContent = secondsLeft < 10 ? '0' + secondsLeft : secondsLeft;
 }
+
+setInterval(updateCountdown, 1000);
+
 </script>
 	
 	<!-- jQuery -->
