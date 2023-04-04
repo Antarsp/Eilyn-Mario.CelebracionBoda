@@ -1,87 +1,66 @@
-/* Estilos para el cuerpo de la página */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background-color: #1c1c1c;
+    background-image: url('https://i.imgur.com/K0GVDwF.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
-  /* Estilos para el encabezado de la página */
-  header {
-    background-color: #f7f7f7;
-    padding: 20px;
-    text-align: center;
+  /* Animación del título */
+  h1 {
+    animation-name: move-title;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
   }
   
-  header h1 {
-    font-size: 3rem;
-    margin: 0;
+  @keyframes move-title {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
   
-  header p {
-    font-size: 1.2rem;
-    margin: 0;
+  /* Animación del texto principal */
+  #main-text {
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
   }
   
-  /* Estilos para la sección de la historia de la pareja */
-  #historia {
-    background-color: #fff;
-    padding: 50px 20px;
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
   
-  #historia h2 {
-    font-size: 2rem;
-    margin: 0;
+  /* Animación del botón */
+  .btn {
+    animation-name: btn-pulse;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
   }
   
-  #historia p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    margin: 20px 0;
+  @keyframes btn-pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
-  
-  /* Estilos para la sección de detalles de la boda */
-  #detalles {
-    background-color: #f7f7f7;
-    padding: 50px 20px;
-  }
-  
-  #detalles h2 {
-    font-size: 2rem;
-    margin: 0;
-  }
-  
-  #detalles p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    margin: 20px 0;
-  }
-  
-  /* Estilos para la sección de ubicación */
-  #ubicacion {
-    background-color: #fff;
-    padding: 50px 20px;
-  }
-  
-  #ubicacion h2 {
-    font-size: 2rem;
-    margin: 0;
-  }
-  
-  #ubicacion p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    margin: 20px 0;
-  }
-  
-  /* Estilos para el pie de página */
-  footer {
-    background-color: #f7f7f7;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  footer p {
-    font-size: 1.2rem;
-    margin: 0;
-  }
-  
