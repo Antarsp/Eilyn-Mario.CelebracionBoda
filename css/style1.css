@@ -1,38 +1,87 @@
+/* Estilos para el cuerpo de la página */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  h1 {
-    margin: 0;
-  }
-  
-  main {
-    margin: 20px;
-  }
-  
-  section {
-    margin-bottom: 20px;
-  }
-  
-  h2 {
-    margin-bottom: 10px;
-  }
-  
-  ul {
-    list-style: none;
     margin: 0;
     padding: 0;
   }
   
-  a {
-    color: #333;
+  /* Estilos para el encabezado de la página */
+  header {
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  /* Estilos para la sección de la historia de la pareja */
+  #historia {
+    background-color: #fff;
+    padding: 50px 20px;
+  }
+  
+  #historia h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  #historia p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 20px 0;
+  }
+  
+  /* Estilos para la sección de detalles de la boda */
+  #detalles {
+    background-color: #f7f7f7;
+    padding: 50px 20px;
+  }
+  
+  #detalles h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  #detalles p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 20px 0;
+  }
+  
+  /* Estilos para la sección de ubicación */
+  #ubicacion {
+    background-color: #fff;
+    padding: 50px 20px;
+  }
+  
+  #ubicacion h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  #ubicacion p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 20px 0;
+  }
+  
+  /* Estilos para el pie de página */
+  footer {
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 1.2rem;
+    margin: 0;
   }
   
