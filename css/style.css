@@ -940,7 +940,7 @@ form label {
 .simply-countdown > .simply-section {
   /* coutndown blocks */
   display: inline-block;
-  width: 90;
+  width: 90px;
   height: 90px;
   background: rgba(206, 15, 15, 0.8);
   margin: 0 4px;
@@ -979,7 +979,7 @@ form label {
 }
 
 .simply-countdown > .simply-section .simply-amount {
-  font-size: 28px;
+  font-size: 25px;
   /* amounts */
 }
 
