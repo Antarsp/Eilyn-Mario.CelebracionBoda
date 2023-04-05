@@ -1,138 +1,113 @@
 body {
-    background-color: #1c1c1c;
-    background-image: url('https://i.imgur.com/K0GVDwF.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  /* Animación del título */
-  h1 {
-    animation-name: move-title;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-  }
-  
-  @keyframes move-title {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-  
-  /* Animación del texto principal */
-  #main-text {
-    animation-name: fade-in;
-    animation-duration: 2s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-  }
-  
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  /* Animación del botón */
-  .btn {
-    animation-name: btn-pulse;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-  }
-  
-  @keyframes btn-pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-
-  .gifts {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #000;
     background-color: #fff;
-    color: #1c1c1c;
-    padding: 50px;
-    margin: 50px 0;
-  }
-  
-  .gifts h2 {
-    font-size: 2rem;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sacramento', cursive;
+    font-weight: normal;
+    margin: 0;
+}
+
+h1 {
+    font-size: 48px;
+    color: #ff0000;
+    text-align: center;
+    margin-top: 50px;
     margin-bottom: 30px;
-  }
-  
-  .gifts p {
-    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 36px;
+    color: #000;
+    margin-top: 60px;
     margin-bottom: 20px;
-  }
-  
-  .gifts ul {
+}
+
+p {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+nav {
+    margin-right: 50px;
+}
+
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  .gifts li {
-    margin-bottom: 10px;
-  }
-  
-  .gifts a {
-    color: #1c1c1c;
-    text-decoration: underline;
-  }
-  
-  .gifts a:hover {
-    color: #af5eff;
-  }
-  
-
-
-  .countdown {
-    background-color: #f7f7f7;
-    color: #1c1c1c;
-    padding: 50px;
-    margin: 50px 0;
-    text-align: center;
-  }
-  
-  .countdown h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-  }
-  
-  .countdown-container {
     display: flex;
-    justify-content: center;
-  }
-  
-  .countdown-item {
-    margin: 0 20px;
-  }
-  
-  .countdown-number {
-    font-size: 4rem;
+}
+
+nav li {
+    margin-left: 20px;
+    font-size: 18px;
     font-weight: bold;
-  }
-  
-  .countdown-label {
-    font-size: 1.2rem;
-    margin-top: 10px;
-  }
-  
-  
+    transition: all 0.3s ease;
+}
+
+nav li:hover {
+    transform: translateY(-2px);
+}
+
+main {
+    margin-top: 100px;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 80px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 72px;
+    }
+
+    h2 {
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
