@@ -8,6 +8,12 @@
 	<meta name="description" content="<title>Boda Eilyn y Mario</title>">
 		<meta name="keywords" content="boda">
 	<link rel="stylesheet" href="css/style1.css">
+	<script>
+		function updateCountdown() {
+			// código de la función de contador aquí
+		}
+		setInterval(updateCountdown, 1000);
+	</script>
 </head>
 <body>
 	<header>
@@ -27,6 +33,28 @@
 			<p>Estamos muy emocionados de compartir este momento especial con todos ustedes. Esperamos que puedan acompañarnos en nuestro día especial.</p>
 			<p><a href="#rsvp">Confirma tu asistencia</a></p>
 		</section>
+
+		<section class="countdown">
+			<h2>Cuenta regresiva</h2>
+			<div class="countdown-container">
+			  <div class="countdown-item">
+				<div class="countdown-number days">73</div>
+				<div class="countdown-label">Días</div>
+			  </div>
+			  <div class="countdown-item">
+				<div class="countdown-number hours">01</div>
+				<div class="countdown-label">Horas</div>
+			  </div>
+			  <div class="countdown-item">
+				<div class="countdown-number minutes">49</div>
+				<div class="countdown-label">Minutos</div>
+			  </div>
+			  <div class="countdown-item">
+				<div class="countdown-number seconds">03</div>
+				<div class="countdown-label">Segundos</div>
+			  </div>
+			</div>
+		  </section>
 
 		<section id="ceremonia">
 			<h2>Ceremonia</h2>
@@ -70,6 +98,36 @@
 			</form>
 		</section>
 	</main>
+
+
+	<script>
+		const countdownContainer = document.querySelector('.countdown-container');
+	const daysCountdown = document.querySelector('.days');
+	const hoursCountdown = document.querySelector('.hours');
+	const minutesCountdown = document.querySelector('.minutes');
+	const secondsCountdown = document.querySelector('.seconds');
+	
+	// Cambia esta fecha a la fecha de tu boda
+	const weddingDate = new Date('June 16, 2023 19:00:00');
+	
+	function updateCountdown() {
+	  const now = new Date();
+	  const timeLeft = weddingDate - now;
+	
+	  const daysLeft = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+	  const hoursLeft = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
+	  const minutesLeft = Math.floor((timeLeft / 1000 / 60) % 60);
+	  const secondsLeft = Math.floor((timeLeft / 1000) % 60);
+	
+	  daysCountdown.textContent = daysLeft < 10 ? '0' + daysLeft : daysLeft;
+	  hoursCountdown.textContent = hoursLeft < 10 ? '0' + hoursLeft : hoursLeft;
+	  minutesCountdown.textContent = minutesLeft < 10 ? '0' + minutesLeft : minutesLeft;
+	  secondsCountdown.textContent = secondsLeft < 10 ? '0' + secondsLeft : secondsLeft;
+	}
+	
+	setInterval(updateCountdown, 1000);
+	
+	</script>
 </body>
 </html>
 </html>
